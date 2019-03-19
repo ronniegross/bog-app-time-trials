@@ -9,6 +9,7 @@ app.use(express.json());
 app.use(express.static(__dirname + '/client/build/'));
 app.use(logger('dev'));
 
+
 // app.get('/', (req, res) => {
 //   res.send("Hello World")
 // })
@@ -18,6 +19,10 @@ app.use(logger('dev'));
 // })
 
 app.use('/', routes);
+
+app.get('/*', (req, res) => {
+    res.sendFile(`${__dirname}/client/build/index.html`)
+  })
 
 
 const PORT = process.env.PORT || 3001
