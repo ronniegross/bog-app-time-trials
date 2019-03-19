@@ -3,7 +3,6 @@ const router = express.Router()
 const Creature = require('../models/Creature')
 
 
-
 // Get All Creatures
 
 const creatureController = {
