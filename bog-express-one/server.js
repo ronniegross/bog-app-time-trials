@@ -18,7 +18,7 @@ app.use(logger('dev'));
 //     res.sendFile(__dirname + '/controllers/creatureController.js')
 // })
 
-app.use('/', routes);
+// app.use('/', routes);
 
 app.get('/*', (req, res) => {
     res.sendFile(`${__dirname}/client/build/index.html`)
