@@ -18,7 +18,7 @@ router.get('/', creatureController.index);
 
 
 router.get('/:id', creatureController.show)
-router.post('/new', creatureController.create)
+router.post('/', creatureController.create)
 router.put('/:id/update', creatureController.update)
 router.delete('/:id/delete', creatureController.delete)
 

@@ -8,6 +8,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static(`${__dirname}/client/build`))
 
+// how does this connect to my database???????????
 app.use('/api/v1', routes)
 
 app.get('/*', (req, res) => {
