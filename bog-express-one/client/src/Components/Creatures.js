@@ -53,7 +53,7 @@ class Creatures extends Component {
     }
 
     render() {
-        console.log(this.state.creatures)
+        // console.log(this.state.creatures)
         return (
             <div>
                 <h2>Creatures</h2>
